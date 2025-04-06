@@ -12,6 +12,7 @@ class Expense(db.Model):
     amount = db.Column(db.Float, nullable=False)
     date = db.Column(db.DateTime, default=datetime.utcnow)
     category = db.Column(db.String(100), nullable=False)
+    
 
 @app.route('/')
 def index():
